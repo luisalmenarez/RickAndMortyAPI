@@ -1,9 +1,11 @@
+import { Character } from "../Character/Character";
+
 export const CharacterList = ({ characters }) => {
   return (
-    <div>
+    <section className="flex flex-wrap justify-center">
       {characters.map((character) => (
-        <h2 key={character.id}>{character.name}</h2>
+        <Character key={character.id} {...character} />
       ))}
-    </div>
+    </section>
   );
 };
