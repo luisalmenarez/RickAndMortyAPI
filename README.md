@@ -20,12 +20,9 @@ Este proyecto utiliza la API pública de Rick and Morty para mostrar una galerí
 
 - Integración de Material-UI: La interfaz de usuario se ha construido utilizando componentes de Material-UI para un diseño moderno y atractivo.
 
-
-
-Puedes ver una vista previa [aquí]().
+Puedes ver una vista previa [aquí](https://rickmortyexplorer.netlify.app/).
 
 ![Captura de pantalla 2023-11-13 a las 21 33 30](https://github.com/luisalmenarez/RickAndMortyAPI/assets/125621759/081f6849-5808-4529-a045-85ee077566c6)
-
 
 ## Contacto
 
