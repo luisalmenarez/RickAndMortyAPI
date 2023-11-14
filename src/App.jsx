@@ -1,9 +1,9 @@
-import { CharacterListContain } from "./Components";
+import { CharacterListContain, Header } from "./Components";
 
 export const App = () => {
   return (
     <>
-      {/* <h1>Hello World</h1> */}
+      <Header />
       <CharacterListContain />
     </>
   );

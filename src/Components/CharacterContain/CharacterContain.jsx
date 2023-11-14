@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { CharacterList } from "../CharacterList/CharacterList";
+import { Button } from "../Button/Button";
 
 export const CharacterListContain = () => {
   const [characters, setCharacters] = useState([]);
@@ -18,6 +19,9 @@ export const CharacterListContain = () => {
   };
 
   const handleNextPage = () => {
+    if (page === 42) {
+      return page(42);
+    }
     setPage(page + 1);
   };
 
@@ -35,20 +39,12 @@ export const CharacterListContain = () => {
   }, [page]);
 
   return (
-    <main className="flex flex-col align-items-center m-6">
+    <main className="grid grid-row-4  align-items-center m-6">
       <CharacterList characters={characters} />
-      <div className="flex justify-center m-4 gap-2">
-        <button
-          onClick={handlePrevPage}
-          className="bg-indigo-500 transition-all duration-500 hover:bg-indigo-700 hover:scale-105 text-white text-sm font-bold py-1 px-6 rounded focus:outline-none uppercase">
-          Prev
-        </button>
+      <div className="flex justify-center m-4 p-4 gap-2">
+        {page === 1 ? null : <Button text="Prev" onClick={handlePrevPage} />}
         <strong>Page: {page}</strong>
-        <button
-          onClick={handleNextPage}
-          className="bg-indigo-500 transition-all duration-500 hover:bg-indigo-700 hover:scale-105 text-white text-sm font-bold py-1 px-6 rounded focus:outline-none uppercase">
-          Next
-        </button>
+        {page === 42 ? null : <Button text="Next" onClick={handleNextPage} />}
       </div>
     </main>
   );
