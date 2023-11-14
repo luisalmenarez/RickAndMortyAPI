@@ -1,8 +1,29 @@
-# React + Vite
+# Rick and Morty API Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Esta es una pequeña aplicación construida con React para explorar la API de Rick and Morty! 🚀
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto utiliza la API pública de Rick and Morty para mostrar una galería de personajes desde el universo de la famosa serie animada. Puedes explorar la lista de personajes, obtener detalles específicos de cada uno y disfrutar de una interfaz de usuario amigable.
+
+## Características
+
+- Exploración de Personajes: Descubre una amplia variedad de personajes, desde los protagonistas hasta los más oscuros del multiverso.
+
+- Detalles Personalizados: Cada personaje tiene su propia tarjeta con detalles específicos y un botón de "Detalles" para una experiencia de usuario completa.
+
+- Integración de Material-UI: La interfaz de usuario se ha construido utilizando componentes de Material-UI para un diseño moderno y atractivo.
+
+## Tecnologías Utilizadas
+
+![HTML](https://img.shields.io/badge/-HTML-ff4500?style=flat&logo=html5&logoColor=white)
+![Tailwind CSS Badge](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![React Badge](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white)
+
+Puedes ver una vista previa [aquí]().
+
+## Contacto
+
+- [Twitter](https://twitter.com/_luisalmenarez)
+- [Instagram](https://www.instagram.com/_luisalmenarez/)
+- [LinkedIn](https://www.linkedin.com/in/luisalmenarez/)
