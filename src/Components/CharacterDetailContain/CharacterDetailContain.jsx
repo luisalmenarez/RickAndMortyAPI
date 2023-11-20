@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { CharacterDetail } from "../CharacterDetail/CharacterDetail";
+import { useParams } from "react-router-dom";
+import { Footer } from "../Footer/Footer";
 
 export const CharacterDetailContain = () => {
+  const { id } = useParams();
+
+  console.log(id);
+
   const [character, setCharacter] = useState(null);
 
   const getCharacter = async (id) => {
@@ -19,12 +25,15 @@ export const CharacterDetailContain = () => {
   };
 
   useEffect(() => {
-    getCharacter(40);
+    getCharacter(id);
   }, []);
 
   return (
-    <div className="flex justify-center mt-5">
-      {character && <CharacterDetail {...character} />}
-    </div>
+    <>
+      <main className="flex justify-center mt-5">
+        {character && <CharacterDetail {...character} />}
+      </main>
+      <Footer />
+    </>
   );
 };

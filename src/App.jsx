@@ -1,11 +1,15 @@
-import { CharacterListContain, Footer, Header } from "./Components";
+import { CharacterContain, CharacterDetailContain, Header } from "./Components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <CharacterListContain />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<CharacterContain />} />
+        <Route path="/characters/:status" element={<CharacterContain />} />
+        <Route path="/character/:id" element={<CharacterDetailContain />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
